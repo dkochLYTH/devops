@@ -52,8 +52,8 @@
 	</distributionManagement>
 
 	<scm>
-		<connection>scm:git:git@github.com:dkochLYTH/devops.git</connection>
-		<developerConnection>scm:git:git@github.com:dkochLYTH/devops.git</developerConnection>
+		<connection>scm:git:https://github.com/dkochLyth/devops.git</connection>
+		<developerConnection>scm:git:https://github.com/dkochLyth/devops.git</developerConnection>
 		<url>https://github.com/dkochLyth/devops.git</url>
 		<tag>v1.0.3</tag>
 	</scm>
