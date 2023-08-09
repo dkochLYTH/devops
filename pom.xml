@@ -10,7 +10,7 @@
 	</parent>
 	<groupId>com.example</groupId>
 	<artifactId>devops</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.3.0-SNAPSHOT</version>
 	<packaging>war</packaging>
 	<name>devops</name>
 	<description>Demo project for Spring Boot</description>
@@ -25,6 +25,10 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-web</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-logging</artifactId>
 		</dependency>
 
 		<dependency>
