@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class WelcomeController {
 
     private final Logger logger= LoggerFactory.getLogger(this.getClass());
+
     @RequestMapping("/")
     public String welcome(Model model) {
         logger.info("Processing Logger");
