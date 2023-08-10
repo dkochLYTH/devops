@@ -30,7 +30,7 @@ node {
       }
    }
    stage('Deploy') {
-       bat(/ for \/f "delims=" %%a in ('dir /s /b *.sln') do set "name=%%a" curl -u jenkins:jenkins -T target\devops-[1-20].war "http://localhost:8080/manager/text/deploy?path=/devops&update=true" /)
+       bat(/ for \/f "delims=" %%a in ('dir \/s \/b *.war') do set "name=%%a" curl -u jenkins:jenkins -T %name% "http://localhost:8080/manager/text/deploy?path=/devops&update=true" /)
 
 
 
