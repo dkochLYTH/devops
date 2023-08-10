@@ -26,7 +26,7 @@ node {
       if (isUnix()) {
          sh "'${mvnHome}/bin/mvn' sonar:sonar"
       } else {
-         bat(/"${mvnHome}\bin\mvn" sonar:sonar -Dsonar.projectKey=devops -Dsonar.projectName='devops'  -Dsonar.host.url=http://localhost:9000  -Dsonar.token=sqp_43e161721657c6ad98480b4974057816d768f05c/)
+         bat(/"${mvnHome}\bin\mvn" sonar:sonar -Dsonar.projectKey=devops -Dsonar.projectName='devops'/)
       }
    }
    stage('Deploy') {
