@@ -30,8 +30,9 @@ node {
       }
    }
    stage('Deploy') {
+
        bat(/ for \/f "delims=" %%a in ('dir \/s \/b *.war') do set "name=%%a" /)
-       bat(/ curl -u jenkins:jenkins -T %name% "http://localhost:8080\/manager\/text\/deploy?path=\/devops&update=true" /)
+       bat 'curl -u jenkins:jenkins -T %name% "http://localhost:8080/manager/text/deploy?path=/devops&update=true" '
 
    }
    stage("Smoke Test"){
